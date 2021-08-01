@@ -50,7 +50,7 @@ const HomePage = () => {
             <Container>
                 <Row className="justify-content-center">
                     <Col md={6}>
-                        <h1 className="text-center">Book Store</h1>
+
                         {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
                         <SearchBar
                             searchInput={searchInput}
