@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Navbar, Button, Form, FormControl } from 'react-bootstrap'
+import { Nav, Navbar, Button, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
@@ -14,11 +14,11 @@ const NavigationBar = () => {
 
                     </Nav>
                     <Form className='d-flex' >
-                        <Button variant="outline-success">Search</Button>
+                        {/* <Button variant="outline-success">Search</Button>
                         <FormControl
                             type="text"
                             className="mr-sm-2"
-                        />
+                        /> */}
 
                         <Button variant="outline-success" as={Link} to="/signin">SignIn</Button>
                         <Button variant="outline-success" as={Link} to="/cart">Cart</Button>

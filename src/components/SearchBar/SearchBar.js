@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Col, Row } from "react-bootstrap";
 
 
 const SearchBar = ({
@@ -9,15 +9,17 @@ const SearchBar = ({
 }) => {
     return (
         <Form onSubmit={handleSubmit}>
-            <Form.Control
-                placeholder="Search..."
-                value={searchInput}
-                onChange={handleSearchChange}
-            />
+            <Row>
+                <Col>
+                    <Form.Control
+                        placeholder="..."
+                        value={searchInput}
+                        onChange={handleSearchChange}
+                    />
+                </Col>
 
-
-            <Button type="submit">Search</Button>
-
+                <Button style={{ width: "70px" }} type="submit">Search</Button>
+            </Row>
 
         </Form>
     )

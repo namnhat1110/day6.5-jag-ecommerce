@@ -35,11 +35,6 @@ const DetailPage = () => {
     //     dispatch(productsActions.postproductToList(addingproduct))
     // }, [addingproduct])
 
-
-
-
-
-
     return (
         <div>
             <NavigationBar />
@@ -75,9 +70,7 @@ const DetailPage = () => {
                                     <div>
                                         <strong>Stock:</strong> {product.stock}
                                     </div>
-                                    <div>
-                                        <strong>Language:</strong> {product.language}
-                                    </div>
+
                                     <Button variant="success" onClick={() => addToCart()}>
                                         Add to cart
                                     </Button>
